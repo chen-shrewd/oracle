@@ -29,7 +29,7 @@ and d.department_name in ('IT','Sales')
 GROUP BY d.department_name;
 ```
 
-![](chaxun1.png)
+![](https://github.com/chen-shrewd/oracle/blob/master/test1/chaxun1.png)
 
 ### 查询
 
@@ -44,13 +44,13 @@ GROUP BY d.department_name
 HAVING d.department_name in ('IT','Sales');
 ```
 
-![](chaxun2.png)
+![](https://github.com/chen-shrewd/oracle/blob/master/test1/chaxun2.png)
 
 ##### 通过分析判断查询2是最优的
 
 ##### SQL优化指导
 
-![](youhua2.png)
+![](https://github.com/chen-shrewd/oracle/blob/master/test1/youhua2.png)
 
 ##### 自己设计的SQL语句：查询工资大于10000的员工姓名
 
@@ -63,4 +63,4 @@ HAVING SALARY > 10000
 
 ##### SQL优化指导
 
-![](youhua3.png)
+![](https://github.com/chen-shrewd/oracle/blob/master/test1/youhua3.png)
