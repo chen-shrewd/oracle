@@ -37,7 +37,7 @@
 
   语句“ALTER USER new_user QUOTA 50M ON users;”是指授权new_user用户访问users表空间，空间限额是50M。
 
-  ![](step1.png)
+  ![](https://github.com/chen-shrewd/oracle/blob/master/test2/step1.png)
 
 - 第2步：新用户new_user_czm连接到pdborcl，创建表mytable和视图myview，插入数据，最后将myview的SELECT对象权限授予hr用户。
 
@@ -63,7 +63,7 @@
   SQL>exit
   ```
 
-  ![](step2.png)
+  ![](https://github.com/chen-shrewd/oracle/blob/master/test2/step2.png)
 
 - 第3步：用户hr连接到pdborcl，查询new_user_czm授予它的视图myview
 
@@ -79,7 +79,7 @@
   
   测试同学用户之间的表的共享
   
-  ![](step3_2.png)
+  ![](https://github.com/chen-shrewd/oracle/blob/master/test2/step3_2.png)
 
 ### 数据库和表空间占用分析
 
@@ -108,4 +108,4 @@ SQL>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
 - autoextensible是显示表空间中的数据文件是否自动增加。
 - MAX_MB是指数据文件的最大容量。
 
-![](step4.png)
+![](https://github.com/chen-shrewd/oracle/blob/master/test2/step4.png)
