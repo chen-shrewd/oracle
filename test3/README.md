@@ -37,9 +37,9 @@ SQL>@test3.sql
 SQL>exit
 ```
 
-![](step1.jpg)
+![](https://github.com/chen-shrewd/oracle/blob/master/test3/step1.jpg)
 
-![](step2.jpg)
+![](https://github.com/chen-shrewd/oracle/blob/master/test3/step2.jpg)
 
 在主表orders和从表order_details之间建立引用分区 在study用户中创建两个表：orders（订单表）和order_details（订单详表），两个表通过列order_id建立主外键关联。orders表按范围分区进行存储，order_details使用引用分区进行存储。
 
@@ -259,9 +259,9 @@ REFERENCES ORDERS_NOSPACE
 ENABLE;
 ```
 
-![](step3.jpg)
+![](https://github.com/chen-shrewd/oracle/blob/master/test3/step3.jpg)
 
-![](step4.jpg)
+![](https://github.com/chen-shrewd/oracle/blob/master/test3/step4.jpg)
 
 对无分区表执行计划分析
 
@@ -279,9 +279,9 @@ a.ORDER_ID=b.order_id and
 a.order_date between to_date('2017-1-1','yyyy-mm-dd') and to_date('2018-6-1','yyyy-mm-dd');
 ```
 
-![](step5.jpg)
+![](https://github.com/chen-shrewd/oracle/blob/master/test3/step5.jpg)
 
-![](step6.jpg)
+![](https://github.com/chen-shrewd/oracle/blob/master/test3/step6.jpg)
 
 #### 实验总结
 
